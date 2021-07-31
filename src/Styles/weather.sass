@@ -1,0 +1,47 @@
+#weatherSection
+    width: 90%
+    padding: 1% 5%
+    +below()
+        // width: 100%
+        margin-top: 10%
+    .weatherHeading
+        padding: 2%
+        text-align: left
+        padding-left: 4%
+        background-color: $color-blue
+        color: $color-white
+        +below()
+            padding: 5%
+            text-align: center
+    .weatherTileContainer
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        .weatherTile
+            width: 25%
+            height: 250px
+            color: $color-white
+            +below()
+                width: 50%
+                height: 200px
+            &.weather0
+                background: #0D7E88
+            &.weather1
+                background: #D09378
+            &.weather2
+                background:  #405B5D
+            &.weather3
+                background:#74A748
+            h4
+                font-size: 26px
+                margin-top: 5%
+                margin-bottom: 2%
+            img
+                width: 15%
+                margin: 5%
+            .temp
+                font-size: 60px
+                font-weight: 600
+                margin-top: 0
+                +below()
+                    font-size: 45px

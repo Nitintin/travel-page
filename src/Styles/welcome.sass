@@ -1,0 +1,36 @@
+#welcomeSection
+    padding: 0 5%
+    display: flex
+    +below()
+        flex-direction: column
+        // width: 100%
+    .imgContainer
+        display: inline-block
+        width: 55%
+        img
+            width: 75%
+        +below()
+            width: 100%
+    .textContainer
+        display: inline-block
+        width: 45%
+        text-align: left
+        +below()
+            width: 100%
+        .welcomeText
+            margin-top: 20%
+            margin-right: 10%
+            +below()
+                margin-right: 0
+                text-align: center
+            h3
+                font-size: 50px
+                margin: 0
+            p
+                font-size: 30px
+            button
+                border-radius: 6px
+                padding: 2% 5%
+                font-weight: 600
+                +below()
+                    padding: 5% 10%

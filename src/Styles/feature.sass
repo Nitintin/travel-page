@@ -1,0 +1,26 @@
+#featureSection
+    padding: 3% 5%
+    +below()
+        // width: 100%
+    .featureHeading
+        text-align: left
+        color: $color-blue
+        font-size: 28px
+        +below()
+            font-size: 20px
+        h3
+            margin-bottom: 1%
+    .featureTileContainer
+        // width: 100%
+        overflow-x: auto
+        display: flex
+        flex-wrap: nowrap
+        .featureTile
+            figure
+                margin-left: 0
+                +below()
+                    margin-right: 15px
+                img
+                    border-radius: 5%
+                    width: 150px
+                    height: 150px

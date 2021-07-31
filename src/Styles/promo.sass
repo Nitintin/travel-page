@@ -1,0 +1,24 @@
+#promoSection
+    background-image: url('../Assets/promo-image.png')
+    background-repeat: no-repeat
+    background-size: cover
+    height: 580px
+    +below()
+        background-size: contain
+        height: 180px
+    .promoText
+        color: $color-white
+        text-align: left
+        font-size: 45px
+        width: 45%
+        padding-top: 15%
+        padding-left: 5% 
+        +below()
+            width: 60%
+            padding-top: 20%
+            padding-right: 5%
+            h3,h4
+                margin: 0
+                font-size: 20px
+        h4
+            margin: 0

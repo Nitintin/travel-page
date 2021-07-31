@@ -1,0 +1,30 @@
+#footerSection
+    display: flex
+    justify-content: center
+    padding-bottom: 3%
+    +below()
+        flex-direction: column
+    .column
+        width: 20%
+        +below()
+            width: 100%
+        .columnContent
+            padding-left: 20%
+            +below()
+                padding-left: 5%
+            h4
+                text-align: left
+                font-size: 24px
+                font-weight: 600
+                margin-bottom: 1%
+            ul
+                padding: 0
+                li
+                    display: block
+                    font-size: 20px
+                    margin-bottom: 2%
+                    text-align: left
+        &.lastCol
+            width: 25%
+            +below()
+                width: 100%
