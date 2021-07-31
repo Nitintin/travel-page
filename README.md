@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Welcome to Sirius travel page layout
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created by nitin as a testimony of his skills. The entire project was build from scratch using ReactJS. 
 
-## Available Scripts
+`Live Preview` - https://travel-layout.netlify.app/
 
-In the project directory, you can run:
+Keep Reading, you are up for a wonderful ride....
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Points Of Attraction
 
-### `yarn test`
+### Mobile Responsive
+The entire website is mobile responsive. No additional dependency or css frameworks were used to achieve this. Good old fashioned media query and display flex did the trick!
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### React JS (Hooks)
+Its always good to use latest and newest of the technology. Who uses class based components anyways?
 
-### `yarn build`
+### SASS
+This project is awesome, but is our styling also is? Yep! Syntactically awesome style sheet in the houseeee!!!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Custom Hooks
+Lets remove all the redundant code! Using custom hooks i have made sure to re-utilise the same code as much as feasible. (Extra points for that?No? Fine, wait for the next step)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Live Preview
+No one likes to setup an entire project on their local machine. Dont worry buddy, as a fellow engineer, i got you covered! Test the entire application here- https://travel-layout.netlify.app/ . 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+(You still have option to clone this repo and run it on your machine)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Modular Code
+The code is made highly modular and i have made sure to follow SRP principle throughout the project. More details about this in the next heading
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Design Principles
 
-## Learn More
+## `SRP` - Single Responsibilty Principle
+Each component should be responsible for doing only one task. I have made sure to segregate buisness logic from Views. This helps to achieve SRP and code becomes alot more easier to debug
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## `DRY` - Dont Repeat Your Self 
+I have made sure to make the code more and more reusable. Using custom hooks i have reused the data fetching code for both weather and featured components
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+And on that note.....+5 points to gryfinddor!! BTW, i was able to complete this enitre work in less than 24 hours...
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
