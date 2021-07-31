@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Logic/Header'
+import NavigationView from './Components/View/NavigationView'
+import WelcomeView from './Components/View/WelcomeView'
+import Weather from './Components/Logic/Weather'
+import Feature from './Components/Logic/Feature'
+import PromoView from './Components/View/PromoView'
+import Quote from './Components/Logic/Quote'
+import FooterView from './Components/View/FooterView'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+      <NavigationView/>
+      <WelcomeView/>
+      <Weather/>
+      <Feature/>
+      <PromoView/>
+      <Quote/>
+      <FooterView/>
     </div>
   );
 }

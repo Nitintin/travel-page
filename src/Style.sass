@@ -1,0 +1,267 @@
+@import ./_media-queries
+*
+    font-family: 'Roboto Slab', serif
+    scroll-behavior: smooth
+li
+    list-style: none
+    display: inline-block
+.gradient
+    background-image: linear-gradient(to right, #000, #15355B)
+    color: #fff
+
+#headerSection
+    padding: 1%
+    +below()
+        // width: 100%
+    p
+        width: 60%
+        text-align: center
+        display: inline-block
+        margin: 0
+        +below()
+            width: 90%
+    .offerTimer
+        font-weight: 600
+            
+#navSection
+    +below()
+        // width: 100%
+    ul
+        width: 50%
+        padding-left: 50%
+        +below()
+            width: auto
+            padding: 0
+        li
+            padding: 1% 4%
+            a
+                color: #000
+                text-decoration: none
+                &:visited
+                    color: inherit
+
+#welcomeSection
+    padding: 0 5%
+    display: flex
+    +below()
+        flex-direction: column
+        // width: 100%
+    .imgContainer
+        display: inline-block
+        width: 55%
+        img
+            width: 75%
+        +below()
+            width: 100%
+    .textContainer
+        display: inline-block
+        width: 45%
+        text-align: left
+        +below()
+            width: 100%
+        .welcomeText
+            margin-top: 20%
+            margin-right: 10%
+            +below()
+                margin-right: 0
+                text-align: center
+            h3
+                font-size: 50px
+                margin: 0
+            p
+                font-size: 30px
+            button
+                border-radius: 6px
+                padding: 2% 5%
+                font-weight: 600
+                +below()
+                    padding: 5% 10%
+
+#weatherSection
+    width: 90%
+    padding: 1% 5%
+    +below()
+        // width: 100%
+        margin-top: 10%
+    .weatherHeading
+        padding: 2%
+        text-align: left
+        padding-left: 4%
+        background-color: #123052
+        color: #fff
+        +below()
+            padding: 5%
+            text-align: center
+    .weatherTileContainer
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        .weatherTile
+            width: 25%
+            height: 250px
+            color: #fff
+            +below()
+                width: 50%
+                height: 200px
+            &.weather0
+                background: #0D7E88
+            &.weather1
+                background: #D09378
+            &.weather2
+                background:  #405B5D
+            &.weather3
+                background:#74A748
+            h4
+                font-size: 26px
+                margin-top: 5%
+                margin-bottom: 2%
+            img
+                width: 15%
+                margin: 5%
+            .temp
+                font-size: 60px
+                font-weight: 600
+                margin-top: 0
+                +below()
+                    font-size: 45px
+
+#featureSection
+    padding: 3% 5%
+    +below()
+        // width: 100%
+    .featureHeading
+        text-align: left
+        color: #123052
+        font-size: 28px
+        +below()
+            font-size: 20px
+        h3
+            margin-bottom: 1%
+    .featureTileContainer
+        // width: 100%
+        overflow-x: auto
+        display: flex
+        flex-wrap: nowrap
+        .featureTile
+            figure
+                margin-left: 0
+                +below()
+                    margin-right: 15px
+                img
+                    border-radius: 5%
+                    width: 150px
+                    height: 150px
+
+#promoSection
+    background-image: url('./Assets/promo-image.png')
+    background-repeat: no-repeat
+    background-size: cover
+    height: 580px
+    +below()
+        background-size: contain
+        height: 180px
+    .promoText
+        color: #fff
+        text-align: left
+        font-size: 45px
+        width: 45%
+        padding-top: 15%
+        padding-left: 5% 
+        +below()
+            width: 60%
+            padding-top: 20%
+            padding-right: 5%
+            h3,h4
+                margin: 0
+                font-size: 20px
+        h4
+            margin: 0
+
+#quoteSection
+    // width: 100%
+    margin-bottom: 5%
+    h3
+        color: #123052
+        font-size: 35px
+        +below()
+            font-size: 25px
+    form
+        width: 60%
+        margin: 0 auto
+        +below()
+            width: 100%
+        .inputContainer
+            margin-bottom: 1%
+
+            input
+                &[type=text]
+                    height: 30px
+                    width: 60%
+                    border-color: #b2b2b2
+                    border-radius: 3px
+                    margin-top: 1%
+                    &.hasEmpty
+                        &+.emptyErrorMsg
+                            display: block
+                    &.hasInvalid
+                        &~.invalidErrorMsg
+                            display: block
+            .emptyErrorMsg,.invalidErrorMsg
+                display: none
+                width: 60%
+                text-align: left
+                margin: 2px auto
+                color: red
+            label
+                color: #b2b2b2
+                margin-left: 20%
+                float: left
+        input
+            &[type=submit]
+                padding: 1% 5%
+                border-radius: 5px
+                font-weight: 700
+                margin-top: 2%
+                +below()
+                    padding: 3% 10%
+        .successMsg
+            display: none
+            background: #D4EDD9
+            width: 60%
+            margin: 0 auto
+            padding: 2% 0
+            margin-top: 3%
+            border-radius: 5px
+            &.is-visible
+                display: block
+
+#footerSection
+    display: flex
+    justify-content: center
+    padding-bottom: 3%
+    +below()
+        flex-direction: column
+    .column
+        width: 20%
+        +below()
+            width: 100%
+        .columnContent
+            padding-left: 20%
+            +below()
+                padding-left: 5%
+            h4
+                text-align: left
+                font-size: 24px
+                font-weight: 600
+                margin-bottom: 1%
+            ul
+                padding: 0
+                li
+                    display: block
+                    font-size: 20px
+                    margin-bottom: 2%
+                    text-align: left
+        &.lastCol
+            width: 25%
+            +below()
+                width: 100%
