@@ -5,7 +5,7 @@ const Header = () => {
 
     var counter=0;
     const [time,setTime]=useState('');
-    const countDownDate = new Date("Aug 01, 2021 17:00:00").getTime();
+    const countDownDate = new Date("Aug 08, 2021 18:00:00").getTime();
 
     var clock=setInterval(()=>{
         var current = new Date().getTime();
